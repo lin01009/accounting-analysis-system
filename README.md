@@ -28,7 +28,7 @@
 ### 2.1 下載
 
 1. 前往 **Releases 頁面**：  
-    👉 [點此下載 Windows 版本（ClickOnce）](這裡貼剛剛複製的連結) 
+    👉 [點此下載 Windows 版本（ClickOnce）](sha256:c16490a99182f8e76a53489396d7c199ac94be71edf2c53fb9434782ddad0ec8) 
    
 
 2. 下載壓縮檔：  
