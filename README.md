@@ -28,7 +28,7 @@
 ### 2.1 下載
 
 1. 前往 **Releases 頁面**：  
-    👉 [點此下載 Windows 版本（ClickOnce）](https://github.com/lin01009/accounting-analysis-system/releases/download/v1.0.0/Accounting_Analysis_System_v1.0.0.zip) 
+    👉 [點此下載]() 
    
 
 2. 下載壓縮檔：  
