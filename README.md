@@ -42,7 +42,7 @@ public class Expense
 List<Expense> expenseList;
 ```
 
-2.2 支出紀錄查詢
+### 2.2 支出紀錄查詢
 透過 DataGridView 顯示歷史記錄，可依「分類」與「日期區間」篩選：
 
 ```csharp
@@ -54,7 +54,7 @@ var filtered = expenseList
     .ToList();
 ```
 
-2.3 圖表分析（圓餅圖＋長條圖）
+### 2.3 圖表分析（圓餅圖＋長條圖）
 分類圓餅圖（GroupBy → Sum）
 
 ```csharp
@@ -86,7 +86,7 @@ var byDate = expenseList
 HitTestResult result = chartExpenses.HitTest(e.X, e.Y);
 ```
 
-2.4 預算設定與超支提示
+### 2.4 預算設定與超支提示
 預算由 DataGridView 輸入並儲存為 JSON：
 ```csharp
 public class BudgetItem
@@ -104,7 +104,7 @@ if (item.Total > budget.Amount)
 }
 ```
 
-2.5 資料儲存、匯入、匯出
+### 2.5 資料儲存、匯入、匯出
 
 JSON 儲存資料
 ```csharp
