@@ -43,15 +43,15 @@
 
 將以下三個檔案全部搬到桌面（不可放在其他資料夾）：
 
-Accounting_Analysis_System.application
-Application Files/
-setup
+`Accounting_Analysis_System.application`
+`Application Files/`
+`setup`
 
 ---
 
 2.3 執行程式（ClickOnce 限制版）
 
-在桌面雙擊 Accounting_Analysis_System.application
+在桌面雙擊 `Accounting_Analysis_System.application`
 系統會啟動 ClickOnce 安裝流程，完成後即可執行。
 
 ⚠ 注意
