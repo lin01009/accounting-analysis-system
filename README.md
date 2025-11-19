@@ -119,15 +119,23 @@ CSV 匯出
 ```csharp
 var lines = new List<string> { "日期,類別,金額,備註" };
 ```
-3. 如何執行
+##3. 如何執行
+
 下載或 clone 本專案
+
 使用 Visual Studio 開啟 Accounting_Analysis_System.sln
+
 還原 NuGet 套件（若需要）
+
 執行專案即可開始記帳
 
-4. 個人學習重點
+##4. 個人學習重點
+   
 從「做功能」到「理解系統運作與資料設計」
+
 使用 LINQ 建立查詢邏輯
+
 使用 JSON 建立資料持久化
+
 使用 Chart + HitTest 建立互動式視覺化
 
