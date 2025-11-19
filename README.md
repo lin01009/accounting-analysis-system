@@ -18,12 +18,55 @@
   - CSV 匯出支出紀錄
 
 ---
+---
 
-## 2. 系統功能說明
+## 2. 下載與執行方式（IMPORTANT）
+
+> 目前採用 **ClickOnce 發佈**，Windows 對某些資料夾有額外安全限制  
+> 若直接在下載資料夾執行，可能會出現「無法從這個位置啟動應用程式」訊息。
+
+### 2.1 下載
+
+1. 前往 **Releases 頁面**：  
+    [Download – Accounting Analysis System](https://github.com/你的帳號/你的Repo/releases/latest)  
+   （請將上方連結中的 `你的帳號`、`你的Repo` 改成實際 GitHub 路徑）
+
+2. 下載壓縮檔：  
+   `Accounting_Analysis_System_v1.0.0.zip`
 
 ---
 
-### 2.1 記帳輸入
+### 2.2 解壓縮與放置位置
+
+1. 將 `AccountingAnalysisSystem_Release.zip` 解壓縮。
+解壓縮整個資料夾
+
+將以下三個檔案全部搬到桌面（不可放在其他資料夾）：
+
+Accounting_Analysis_System.application
+Application Files/
+setup
+
+---
+
+2.3 執行程式（ClickOnce 限制版）
+
+在桌面雙擊 Accounting_Analysis_System.application
+系統會啟動 ClickOnce 安裝流程，完成後即可執行。
+
+⚠ 注意
+
+由於 ClickOnce 的安全性限制，本應用程式 只能在桌面啟動，放在其他路徑可能會被 Windows 阻擋並顯示無法啟動的訊息。
+
+這是 ClickOnce 的設計特性，不是程式錯誤。
+
+---
+
+## 3. 系統功能說明
+
+---
+
+### 3.1 記帳輸入
 
 表單輸入日期、支出類別、金額與備註，並使用 `Expense` 類別封裝資料：
 
@@ -42,7 +85,7 @@ public class Expense
 List<Expense> expenseList;
 ```
 
-### 2.2 支出紀錄查詢
+### 3.2 支出紀錄查詢
 透過 DataGridView 顯示歷史記錄，可依「分類」與「日期區間」篩選：
 
 ```csharp
@@ -54,7 +97,7 @@ var filtered = expenseList
     .ToList();
 ```
 
-### 2.3 圖表分析（圓餅圖＋長條圖）
+### 3.3 圖表分析（圓餅圖＋長條圖）
 分類圓餅圖（GroupBy → Sum）
 
 ```csharp
@@ -86,7 +129,7 @@ var byDate = expenseList
 HitTestResult result = chartExpenses.HitTest(e.X, e.Y);
 ```
 
-### 2.4 預算設定與超支提示
+### 3.4 預算設定與超支提示
 預算由 DataGridView 輸入並儲存為 JSON：
 ```csharp
 public class BudgetItem
@@ -104,7 +147,7 @@ if (item.Total > budget.Amount)
 }
 ```
 
-### 2.5 資料儲存、匯入、匯出
+### 3.5 資料儲存、匯入、匯出
 
 JSON 儲存資料
 ```csharp
@@ -119,15 +162,6 @@ CSV 匯出
 ```csharp
 var lines = new List<string> { "日期,類別,金額,備註" };
 ```
-## 3. 如何執行
-
-下載或 clone 本專案
-
-使用 Visual Studio 開啟 Accounting_Analysis_System.sln
-
-還原 NuGet 套件（若需要）
-
-執行專案即可開始記帳
 
 ## 4. 個人學習重點
    
