@@ -38,7 +38,7 @@ Accounting_Analysis_System_Source/
 
 3. 在 Debug 資料夾內找到：
 
-Accounting_Analysis_System.exe
+`Accounting_Analysis_System.exe`
 
 
 4. 直接 雙擊執行 即可使用。
