@@ -28,13 +28,13 @@
    
 
 2. 將 zip 解壓縮後，依序點進以下路徑：
-
+```
 Accounting_Analysis_System_Source/
 └─ accounting-analysis-system-1.0.0/
    └─ Accounting_Analysis_System/
       └─ bin/
          └─ Debug/
-
+```
 
 3. 在 Debug 資料夾內找到：
 
