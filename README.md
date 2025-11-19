@@ -22,43 +22,35 @@
 
 ## 2. 下載與執行方式（IMPORTANT）
 
-> 目前採用 **ClickOnce 發佈**，Windows 對某些資料夾有額外安全限制  
-> 若直接在下載資料夾執行，可能會出現「無法從這個位置啟動應用程式」訊息。
-
-### 2.1 下載
 
 1. 前往 **Releases 頁面**：  
-    👉 [點此下載]() 
+    👉 [點此下載](https://github.com/lin01009/accounting-analysis-system/archive/refs/tags/v1.0.0.zip) 
    
 
-2. 下載壓縮檔：  
-   `Accounting_Analysis_System_v1.0.0.zip`
+2. 將 zip 解壓縮後，依序點進以下路徑：
+
+Accounting_Analysis_System_Source/
+└─ accounting-analysis-system-1.0.0/
+   └─ Accounting_Analysis_System/
+      └─ bin/
+         └─ Debug/
+
+
+3. 在 Debug 資料夾內找到：
+
+Accounting_Analysis_System.exe
+
+
+4. 直接 雙擊執行 即可使用。
+（不需要安裝，打開就能用）
+
+⚠ 建議：
+若 Windows 阻擋執行，可點「更多資訊 → 仍要執行」。
+這是因為本專案為個人開發，未簽署執行憑證，屬正常現象。
 
 ---
 
-### 2.2 解壓縮與放置位置
 
-1. 將 `AccountingAnalysisSystem_Release.zip` 解壓縮。
-解壓縮整個資料夾
-
-將以下三個檔案全部搬到桌面（不可放在其他資料夾）：
-
-`Accounting_Analysis_System.application`
-`Application Files/`
-`setup`
-
----
-
-2.3 執行程式（ClickOnce 限制版）
-
-在桌面雙擊 `Accounting_Analysis_System.application`
-系統會啟動 ClickOnce 安裝流程，完成後即可執行。
-
-⚠ 注意
-
-由於 ClickOnce 的安全性限制，本應用程式 只能在桌面啟動，放在其他路徑可能會被 Windows 阻擋並顯示無法啟動的訊息。
-
-這是 ClickOnce 的設計特性，不是程式錯誤。
 
 ---
 
